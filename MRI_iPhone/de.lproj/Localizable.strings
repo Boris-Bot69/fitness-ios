@@ -1,0 +1,44 @@
+"/api/v1/auth" = "/api/v1/auth";
+"Account" = "Account";
+"Workout Rating" = "Bewertung des Workouts";
+"Intensity" = "Intensität";
+"Comment" = "Kommentar";
+"Logged in as" = "Eingeloggt als";
+"Login Service" = "Login Service";
+"Logout" = "Logout";
+"%lld characters remaining" = "Noch %lld Zeichen übrig";
+"Token: %@" = "Token: %@";
+"Workout Export" = "Workout Exportieren";
+"Upload Workout" = "Workout hochladen";
+"Uploading %lld workout" = "Lädt %lld Workout hoch";
+"Uploading %lld workouts" = "Lädt %lld Workouts hoch";
+
+/* WorkoutList */
+"No Health Access Given!" = "Keinen Zugang zu Gesundheitsdaten gegeben!";
+"Querying Health App Workouts..." = "Durchsuche Workouts in Health App...";
+
+/* WorkoutList+WorkoutCell */
+"rate" = "bewerten";
+"details" = "details";
+
+/* EditWorkoutRating Module */
+"Workouts" = "Workouts";
+"Feedback" = "Feedback";
+
+/* Borg Scale */
+"no exertion at all" = "überhaupt nicht anstrengend";
+"extremely light" = "extrem leicht";
+"very light" = "sehr leicht";
+"light" = "leicht";
+"somewhat hard" = "etwas anstrengend";
+"hard" = "anstrengend";
+"very hard" = "sehr anstrengend";
+"extremely hard" = "extrem anstrengend";
+"maximal exertion" = "maximal anstrengend";
+"not set" = "nicht gesetzt";
+
+/* Workout Rating */
+"good" = "gut";
+"medium" = "mittel";
+"bad" = "schlecht";
+"not set" = "nicht gesetzt";

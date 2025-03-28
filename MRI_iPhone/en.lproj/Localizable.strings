@@ -1,0 +1,6 @@
+/*
+ English strings are used in code, so this file should be empty!
+
+ However, this file is required so that the app doesn't fallback
+ to German as the "only locale available".
+*/
