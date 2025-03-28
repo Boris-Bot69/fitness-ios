@@ -1,0 +1,5 @@
+version: "3.6"
+
+services:
+  flask-prod:
+    image: "harbor.ase.in.tum.de/ios2122-mri/tumsm_server-production"

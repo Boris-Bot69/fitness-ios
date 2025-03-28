@@ -1,0 +1,62 @@
+version: "3.6"
+
+x-build-args: &build_args
+  INSTALL_PYTHON_VERSION: 3.9
+  INSTALL_NODE_VERSION: 16
+
+x-default-volumes: &default_volumes
+  volumes:
+    - ./:/app
+    - node-modules:/app/node_modules
+    - ./dev.db:/tmp/dev.db
+
+services:
+  flask-dev:
+    build:
+      context: .
+      target: development
+      args:
+        <<: *build_args
+    image: "harbor.ase.in.tum.de/ios2122-mri/tumsm_server-development"
+    ports:
+      - "5000:5000"
+      - "2992:2992"
+    <<: *default_volumes
+
+  flask-prod:
+    build:
+      context: .
+      target: production
+      args:
+        <<: *build_args
+    image: "harbor.ase.in.tum.de/ios2122-mri/tumsm_server-production"
+    expose:
+      - "80"
+    environment:
+      FLASK_ENV: production
+      FLASK_DEBUG: 0
+      LOG_LEVEL: info
+      GUNICORN_WORKERS: 4
+      # use below when you have a local postgres instance available
+      DATABASE_URL: postgresql+psycopg2://postgres:mri@localhost/mri
+      # use below when running on ios21tumsm.ase.in.tum.de
+      # DATABASE_UTL: postgresql+psycopg2://postgres:mri@172.17.0.2/mri
+    <<: *default_volumes
+
+  manage:
+    build:
+      context: .
+      target: development
+      args:
+        <<: *build_args
+    entrypoint: flask
+    environment:
+      FLASK_ENV: production
+      FLASK_DEBUG: 0
+    image: "harbor.ase.in.tum.de/ios2122-mri/tumsm_server-manage"
+    stdin_open: true
+    tty: true
+    <<: *default_volumes
+
+volumes:
+  node-modules:

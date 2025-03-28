@@ -1,0 +1,111 @@
+version: "3.6"
+
+x-build-args: &build_args
+  INSTALL_PYTHON_VERSION: 3.9
+  INSTALL_NODE_VERSION: 16
+
+x-default-volumes: &default_volumes
+  volumes:
+    - ./:/app
+    - node-modules:/app/node_modules
+
+services:
+  flask-prod:
+    container_name: "tumsm_production"
+    image: "harbor.ase.in.tum.de/ios2122-mri/tumsm_server-production"
+    build:
+      context: .
+      target: production
+      args:
+        <<: *build_args
+    networks:
+      - backend_network
+    expose:
+      - "80"
+      - "443"
+    depends_on:
+      - database
+    environment:
+      FLASK_ENV: production
+      FLASK_DEBUG: 0
+      LOG_LEVEL: info
+      GUNICORN_WORKERS: 4
+      DATABASE_URL: postgresql+psycopg2://postgres:mri@database:5432/mri
+    <<: *default_volumes
+    # Pass the network interface (local docker network with 0.0.0.0) and the desired port to the Apodini web service
+    #command: ["--hostname", "0.0.0.0", "--port", "80"]
+    labels:
+      # The domain the service will respond to
+      - "traefik.http.routers.backend.rule=Host(`ios21tumsm.ase.in.tum.de`)"
+      # Allow request only from the predefined entry point named "web"
+      - "traefik.http.routers.backend.tls=true"
+      - "traefik.http.routers.backend.entrypoints=web-secure"
+      # We need to define the a service and specify, on which port our server is reachable
+      - "traefik.http.services.backend-service.loadbalancer.server.port=80"
+      # We have to add this service to our router "backend". That's how the router knows where to forward the  requests
+      - "traefik.http.routers.backend.service=backend-service"
+  manage:
+    build:
+      context: .
+      target: production
+      args:
+        - INSTALL_PYTHON_VERSION=3.9
+        - INSTALL_NODE_VERSION=16
+    networks:
+      - backend_network
+    entrypoint: flask
+    environment:
+      FLASK_ENV: production
+      FLASK_DEBUG: 0
+      DATABASE_URL: postgresql+psycopg2://postgres:mri@database:5432/mri
+    image: "harbor.ase.in.tum.de/ios2122-mri/tumsm_server-manage"
+    stdin_open: true
+    tty: true
+    <<: *default_volumes
+
+    
+  # Reverse Proxy to protect our service from direct access
+#  traefik:
+#    container_name: "traefik"
+#    image: "traefik:v2.4"
+#    command:
+#      # Enabling docker provider
+#      - "--providers.docker=true"
+#      # Traefik will listen to incoming request on the port 80 (HTTP) AND on port 443 (HTTPS)
+#      - "--entrypoints.web.address=:80"
+#      - "--entrypoints.web-secure.address=:443"
+#      - "--providers.file.directory=/configuration/"
+#      - "--providers.file.watch=true"
+#    networks:
+#        - backend_network
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    # Traefik needs the docker.sock to detect new docker container
+#    volumes:
+#      - "/opt/docker/dynamic_conf.yml:/configuration/dynamic_conf.yml"
+#      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+#      - "/var/lib/rbg-cert/live/:/certificates"
+      
+  # Postgres-Database
+  database:
+    image: 'postgres:latest'
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mri
+      POSTGRES_DB: mri
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    driver: bridge
+    name: backend_network
+
+volumes:
+  pg_data:
+  node-modules:
