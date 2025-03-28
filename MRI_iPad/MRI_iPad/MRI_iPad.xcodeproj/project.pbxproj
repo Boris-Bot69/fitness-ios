@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2131F1F72699DAA300488293 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F1F62699DAA300488293 /* Refresh.swift */; };
+		2131F1FB269AE91C00488293 /* ProgressViewButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F1FA269AE91C00488293 /* ProgressViewButtonStyle.swift */; };
+		2131F204269CCC7F00488293 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 2131F203269CCC7F00488293 /* Introspect */; };
+		2131F206269E2D8700488293 /* EditPatientViewModel+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F205269E2D8700488293 /* EditPatientViewModel+Save.swift */; };
+		2131F20A269F2C4500488293 /* EditPatientTrainingZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F209269F2C4500488293 /* EditPatientTrainingZones.swift */; };
+		2131F20C269F2E4700488293 /* EditTrainingZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F20B269F2E4700488293 /* EditTrainingZones.swift */; };
+		2131F21026A1A52E00488293 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F20F26A1A52E00488293 /* Gender.swift */; };
+		214F6877268DA07F0033DEC0 /* DeleteViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F6876268DA07F0033DEC0 /* DeleteViewModifier.swift */; };
+		214F687D268DB5DD0033DEC0 /* StudyGroupPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F687C268DB5DD0033DEC0 /* StudyGroupPicker.swift */; };
+		214F687F268DB5EC0033DEC0 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F687E268DB5EC0033DEC0 /* Credentials.swift */; };
+		214F6883268E18270033DEC0 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F6882268E18270033DEC0 /* Validation.swift */; };
+		214F6886268EE9890033DEC0 /* Publisher+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F6885268EE9890033DEC0 /* Publisher+Validator.swift */; };
+		214F6888268EE9B00033DEC0 /* Array+isSorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F6887268EE9B00033DEC0 /* Array+isSorted.swift */; };
+		214F688A268EEA260033DEC0 /* ValidationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F6889268EEA260033DEC0 /* ValidationViewModifier.swift */; };
+		214F688E268F87A60033DEC0 /* AddStudyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214F688D268F87A60033DEC0 /* AddStudyGroup.swift */; };
+		216147AE26852DE4008BB76B /* SortState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216147AD26852DE4008BB76B /* SortState.swift */; };
+		216147B126852E0C008BB76B /* TableColumnHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216147AF26852E0C008BB76B /* TableColumnHeaders.swift */; };
+		216147B426853752008BB76B /* Bool+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216147B326853752008BB76B /* Bool+Comparable.swift */; };
+		216147B8268539A0008BB76B /* SortableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216147B7268539A0008BB76B /* SortableHeader.swift */; };
+		216147BA2685EC5B008BB76B /* Array+Comparable+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216147B92685EC5B008BB76B /* Array+Comparable+Hashable.swift */; };
+		219488C7268768E000CA13BE /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219488C6268768E000CA13BE /* Toolbar.swift */; };
+		21AA5EB2269032110050A9DA /* StudyGroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EB1269032110050A9DA /* StudyGroupList.swift */; };
+		21AA5EB6269497F00050A9DA /* EditPatientViewModel+StudyGroupPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EB5269497F00050A9DA /* EditPatientViewModel+StudyGroupPicker.swift */; };
+		21AA5EBA26960AAD0050A9DA /* SwipeActionViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EB926960AAD0050A9DA /* SwipeActionViewModifier.swift */; };
+		21AA5EC3269623490050A9DA /* EditAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EC2269623490050A9DA /* EditAction.swift */; };
+		21AA5EC5269623570050A9DA /* DeleteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EC4269623570050A9DA /* DeleteAction.swift */; };
+		21AA5EC726962FD60050A9DA /* ActiveToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EC626962FD60050A9DA /* ActiveToggleStyle.swift */; };
+		21AA5EC92696403A0050A9DA /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5EC82696403A0050A9DA /* ActionType.swift */; };
+		21ACC776265A5A05009D477C /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ACC775265A5A05009D477C /* ChartViewModel.swift */; };
+		21ACC780265A5A2B009D477C /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ACC779265A5A2B009D477C /* ViewControllerRepresentable.swift */; };
+		21ACC783265A5A2B009D477C /* ChartXAxisFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ACC77C265A5A2B009D477C /* ChartXAxisFormatter.swift */; };
+		21ACC784265A5A2B009D477C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ACC77E265A5A2B009D477C /* ViewController.swift */; };
+		21ACC787265A5A4E009D477C /* WorkoutOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ACC786265A5A4E009D477C /* WorkoutOverview.swift */; };
+		21ACC78A265A5AB5009D477C /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 21ACC789265A5AB5009D477C /* Charts */; };
+		21ED088326829F22008641AA /* EditPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED088226829F22008641AA /* EditPatient.swift */; };
+		21ED088626829F70008641AA /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED088526829F70008641AA /* SaveButton.swift */; };
+		21ED088826829FD9008641AA /* EditPatientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED088726829FD9008641AA /* EditPatientViewModel.swift */; };
+		21F79BDB269702B0003B3D5C /* Double+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F79BDA269702B0003B3D5C /* Double+Round.swift */; };
+		21F79BDD26973433003B3D5C /* RectMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F79BDC26973433003B3D5C /* RectMarker.swift */; };
+		5B1088C326A311BE00C47332 /* PatientOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1088C226A311BE00C47332 /* PatientOverviewViewModel.swift */; };
+		5B13082E2696FAEB00414F25 /* XlsxDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B13082D2696FAEB00414F25 /* XlsxDocument.swift */; };
+		5B43EBA02683720600287D6C /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43EB9F2683720600287D6C /* String+localized.swift */; };
+		5B43EBA126866FBB00287D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B43EBA326866FBB00287D6C /* Main.storyboard */; };
+		698CBF00268242BF00E475B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 698CBF02268242BF00E475B4 /* Localizable.strings */; };
+		69E19A3826948816007D8078 /* TrainingsRateGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E19A3726948816007D8078 /* TrainingsRateGraph.swift */; };
+		69F7810E269DEBE60002DB64 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7810D269DEBE60002DB64 /* Checkbox.swift */; };
+		6A4B340F268A37760044E576 /* PatientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B340E268A37760044E576 /* PatientRow.swift */; };
+		6A7646C12677C54500E8282C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7646C02677C54500E8282C /* SearchBar.swift */; };
+		6AD0D76426628D1B0015AFD6 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD0D76326628D1B0015AFD6 /* Color.xcassets */; };
+		6AD4C3692675209A003D3A1C /* RoundedCornersModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4C3682675209A003D3A1C /* RoundedCornersModifier.swift */; };
+		6AD4C36B2675262A003D3A1C /* TrainingsRatingsGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4C36A2675262A003D3A1C /* TrainingsRatingsGraph.swift */; };
+		6AD4C36D267536AF003D3A1C /* RangeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4C36C267536AF003D3A1C /* RangeGraph.swift */; };
+		6AD4C38B26762848003D3A1C /* ButtonStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4C38A26762848003D3A1C /* ButtonStyling.swift */; };
+		6AEB20C52682500D005DE733 /* TouchVisualizer in Frameworks */ = {isa = PBXBuildFile; productRef = 5B14832F266A3FF300D0F4E0 /* TouchVisualizer */; };
+		8338FF23267CF8FD00B26F01 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338FF22267CF8FD00B26F01 /* Model.swift */; };
+		8338FF28267D285300B26F01 /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338FF27267D285300B26F01 /* ServerModel.swift */; };
+		8338FF2A267D318000B26F01 /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338FF29267D318000B26F01 /* MockModel.swift */; };
+		8338FF2C267D32FB00B26F01 /* MockModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338FF2B267D32FB00B26F01 /* MockModelFactory.swift */; };
+		8362C33A269DE9D3008E2C6C /* LoginDoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362C339269DE9D3008E2C6C /* LoginDoctorModel.swift */; };
+		83C000B6266E2AA60074DC34 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C000B5266E2AA60074DC34 /* Date+Helper.swift */; };
+		A1E2F51C275E12D50083AAD8 /* NewsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2F51B275E12D50083AAD8 /* NewsPanelView.swift */; };
+		A6090D38266060400033D373 /* Prototyper in Frameworks */ = {isa = PBXBuildFile; productRef = A6090D37266060400033D373 /* Prototyper */; };
+		A6090D3C2660E4D10033D373 /* Shared in Frameworks */ = {isa = PBXBuildFile; productRef = A6090D3B2660E4D10033D373 /* Shared */; };
+		A6090D4A2660FB8C0033D373 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6090D492660FB8C0033D373 /* Sample.swift */; };
+		A6090D552660FCEF0033D373 /* PatientsSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6090D522660FCEF0033D373 /* PatientsSummary.swift */; };
+		A6090D5E266103C70033D373 /* PatientCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6090D59266103C70033D373 /* PatientCalendar.swift */; };
+		A6090D63266104040033D373 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6090D62266104040033D373 /* CalendarModel.swift */; };
+		A6090D6526626F760033D373 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6090D6426626F760033D373 /* CalendarCell.swift */; };
+		A6090D67266390A50033D373 /* PatientSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6090D66266390A50033D373 /* PatientSummaryViewModel.swift */; };
+		A618EE4026A1A781006E1794 /* PatientInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A618EE3F26A1A781006E1794 /* PatientInfoSheet.swift */; };
+		A6363F1C26698DEA00ECB62F /* WorkoutDataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6363F1B26698DEA00ECB62F /* WorkoutDataTable.swift */; };
+		A6363F1E2669924E00ECB62F /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6363F1D2669924E00ECB62F /* StackView.swift */; };
+		A6363F202677568C00ECB62F /* WeekSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6363F1F2677568C00ECB62F /* WeekSummary.swift */; };
+		A6509341268F57C0002F4FB8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6509340268F57C0002F4FB8 /* Color.swift */; };
+		A6509344268F589B002F4FB8 /* WorkoutsOverviewWorkoutMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6509343268F589B002F4FB8 /* WorkoutsOverviewWorkoutMediator.swift */; };
+		A69B1200268A479400F66D55 /* PatientOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B11FF268A479400F66D55 /* PatientOverview.swift */; };
+		A69B1204268A47BF00F66D55 /* ActivityOverviewBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1203268A47BF00F66D55 /* ActivityOverviewBox.swift */; };
+		A69B1206268A47F500F66D55 /* ActivityBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1205268A47F500F66D55 /* ActivityBox.swift */; };
+		A69B1209268A640500F66D55 /* WeekSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B1208268A640500F66D55 /* WeekSummaryViewModel.swift */; };
+		A69E780C2685EDB6003FF6C5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E780B2685EDB6003FF6C5 /* View.swift */; };
+		A69E780E2685EDCB003FF6C5 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E780D2685EDCB003FF6C5 /* EdgeBorder.swift */; };
+		A6C3C5AC26444FDC00C79EB7 /* MRI_iPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3C5AB26444FDC00C79EB7 /* MRI_iPad.swift */; };
+		A6C3C5AE26444FDC00C79EB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3C5AD26444FDC00C79EB7 /* ContentView.swift */; };
+		A6C3C5B026444FDD00C79EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C3C5AF26444FDD00C79EB7 /* Assets.xcassets */; };
+		A6C3C5E6264FFF0B00C79EB7 /* FontAwesomeSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A6C3C5E5264FFF0B00C79EB7 /* FontAwesomeSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2131F1F62699DAA300488293 /* Refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
+		2131F1FA269AE91C00488293 /* ProgressViewButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewButtonStyle.swift; sourceTree = "<group>"; };
+		2131F1FF269B82B600488293 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2131F205269E2D8700488293 /* EditPatientViewModel+Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditPatientViewModel+Save.swift"; sourceTree = "<group>"; };
+		2131F209269F2C4500488293 /* EditPatientTrainingZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPatientTrainingZones.swift; sourceTree = "<group>"; };
+		2131F20B269F2E4700488293 /* EditTrainingZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTrainingZones.swift; sourceTree = "<group>"; };
+		2131F20F26A1A52E00488293 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		214F6876268DA07F0033DEC0 /* DeleteViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewModifier.swift; sourceTree = "<group>"; };
+		214F687C268DB5DD0033DEC0 /* StudyGroupPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroupPicker.swift; sourceTree = "<group>"; };
+		214F687E268DB5EC0033DEC0 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		214F6882268E18270033DEC0 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		214F6885268EE9890033DEC0 /* Publisher+Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Validator.swift"; sourceTree = "<group>"; };
+		214F6887268EE9B00033DEC0 /* Array+isSorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+isSorted.swift"; sourceTree = "<group>"; };
+		214F6889268EEA260033DEC0 /* ValidationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewModifier.swift; sourceTree = "<group>"; };
+		214F688D268F87A60033DEC0 /* AddStudyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudyGroup.swift; sourceTree = "<group>"; };
+		216147AD26852DE4008BB76B /* SortState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortState.swift; sourceTree = "<group>"; };
+		216147AF26852E0C008BB76B /* TableColumnHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableColumnHeaders.swift; sourceTree = "<group>"; };
+		216147B326853752008BB76B /* Bool+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Comparable.swift"; sourceTree = "<group>"; };
+		216147B7268539A0008BB76B /* SortableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortableHeader.swift; sourceTree = "<group>"; };
+		216147B92685EC5B008BB76B /* Array+Comparable+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Comparable+Hashable.swift"; sourceTree = "<group>"; };
+		219488C6268768E000CA13BE /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		21AA5EB1269032110050A9DA /* StudyGroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroupList.swift; sourceTree = "<group>"; };
+		21AA5EB5269497F00050A9DA /* EditPatientViewModel+StudyGroupPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditPatientViewModel+StudyGroupPicker.swift"; sourceTree = "<group>"; };
+		21AA5EB926960AAD0050A9DA /* SwipeActionViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionViewModifier.swift; sourceTree = "<group>"; };
+		21AA5EC2269623490050A9DA /* EditAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAction.swift; sourceTree = "<group>"; };
+		21AA5EC4269623570050A9DA /* DeleteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAction.swift; sourceTree = "<group>"; };
+		21AA5EC626962FD60050A9DA /* ActiveToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveToggleStyle.swift; sourceTree = "<group>"; };
+		21AA5EC82696403A0050A9DA /* ActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
+		21ACC775265A5A05009D477C /* ChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		21ACC779265A5A2B009D477C /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		21ACC77C265A5A2B009D477C /* ChartXAxisFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartXAxisFormatter.swift; sourceTree = "<group>"; };
+		21ACC77E265A5A2B009D477C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21ACC786265A5A4E009D477C /* WorkoutOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutOverview.swift; sourceTree = "<group>"; };
+		21ED088226829F22008641AA /* EditPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPatient.swift; sourceTree = "<group>"; };
+		21ED088526829F70008641AA /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		21ED088726829FD9008641AA /* EditPatientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPatientViewModel.swift; sourceTree = "<group>"; };
+		21F79BDA269702B0003B3D5C /* Double+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Round.swift"; sourceTree = "<group>"; };
+		21F79BDC26973433003B3D5C /* RectMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectMarker.swift; sourceTree = "<group>"; };
+		495574242745339B005E115E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49DFCC0927453163003C0FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1088C226A311BE00C47332 /* PatientOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientOverviewViewModel.swift; sourceTree = "<group>"; };
+		5B13082D2696FAEB00414F25 /* XlsxDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XlsxDocument.swift; sourceTree = "<group>"; };
+		5B43EB9F2683720600287D6C /* String+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		694D856E26839EC600D03359 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		698CBF03268242C200E475B4 /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69E19A3726948816007D8078 /* TrainingsRateGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsRateGraph.swift; sourceTree = "<group>"; };
+		69F7810D269DEBE60002DB64 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		6A4B340E268A37760044E576 /* PatientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRow.swift; sourceTree = "<group>"; };
+		6A7646C02677C54500E8282C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		6AD0D76326628D1B0015AFD6 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		6AD4C3682675209A003D3A1C /* RoundedCornersModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersModifier.swift; sourceTree = "<group>"; };
+		6AD4C36A2675262A003D3A1C /* TrainingsRatingsGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsRatingsGraph.swift; sourceTree = "<group>"; };
+		6AD4C36C267536AF003D3A1C /* RangeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeGraph.swift; sourceTree = "<group>"; };
+		6AD4C38A26762848003D3A1C /* ButtonStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyling.swift; sourceTree = "<group>"; };
+		8338FF22267CF8FD00B26F01 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8338FF27267D285300B26F01 /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
+		8338FF29267D318000B26F01 /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
+		8338FF2B267D32FB00B26F01 /* MockModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModelFactory.swift; sourceTree = "<group>"; };
+		8362C339269DE9D3008E2C6C /* LoginDoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDoctorModel.swift; sourceTree = "<group>"; };
+		83C000B5266E2AA60074DC34 /* Date+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
+		A1E2F51B275E12D50083AAD8 /* NewsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPanelView.swift; sourceTree = "<group>"; };
+		A6090D392660E4B30033D373 /* Shared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Shared; path = ../Shared; sourceTree = "<group>"; };
+		A6090D3A2660E4C70033D373 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Shared/Package.swift; sourceTree = "<group>"; };
+		A6090D492660FB8C0033D373 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		A6090D522660FCEF0033D373 /* PatientsSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsSummary.swift; sourceTree = "<group>"; };
+		A6090D59266103C70033D373 /* PatientCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientCalendar.swift; sourceTree = "<group>"; };
+		A6090D62266104040033D373 /* CalendarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		A6090D6426626F760033D373 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		A6090D66266390A50033D373 /* PatientSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSummaryViewModel.swift; sourceTree = "<group>"; };
+		A618EE3F26A1A781006E1794 /* PatientInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfoSheet.swift; sourceTree = "<group>"; };
+		A6363F1B26698DEA00ECB62F /* WorkoutDataTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataTable.swift; sourceTree = "<group>"; };
+		A6363F1D2669924E00ECB62F /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		A6363F1F2677568C00ECB62F /* WeekSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSummary.swift; sourceTree = "<group>"; };
+		A6509340268F57C0002F4FB8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A6509343268F589B002F4FB8 /* WorkoutsOverviewWorkoutMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsOverviewWorkoutMediator.swift; sourceTree = "<group>"; };
+		A69B11FF268A479400F66D55 /* PatientOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientOverview.swift; sourceTree = "<group>"; };
+		A69B1203268A47BF00F66D55 /* ActivityOverviewBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityOverviewBox.swift; sourceTree = "<group>"; };
+		A69B1205268A47F500F66D55 /* ActivityBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityBox.swift; sourceTree = "<group>"; };
+		A69B1208268A640500F66D55 /* WeekSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekSummaryViewModel.swift; sourceTree = "<group>"; };
+		A69E780B2685EDB6003FF6C5 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A69E780D2685EDCB003FF6C5 /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		A6C3C5A826444FDC00C79EB7 /* MRI_iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRI_iPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C3C5AB26444FDC00C79EB7 /* MRI_iPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRI_iPad.swift; sourceTree = "<group>"; };
+		A6C3C5AD26444FDC00C79EB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6C3C5AF26444FDD00C79EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6C3C5A526444FDC00C79EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21ACC78A265A5AB5009D477C /* Charts in Frameworks */,
+				2131F204269CCC7F00488293 /* Introspect in Frameworks */,
+				A6090D3C2660E4D10033D373 /* Shared in Frameworks */,
+				A6C3C5E6264FFF0B00C79EB7 /* FontAwesomeSwiftUI in Frameworks */,
+				A6090D38266060400033D373 /* Prototyper in Frameworks */,
+				6AEB20C52682500D005DE733 /* TouchVisualizer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		214F6884268EE93F0033DEC0 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				214F6882268E18270033DEC0 /* Validation.swift */,
+				214F6885268EE9890033DEC0 /* Publisher+Validator.swift */,
+				214F6887268EE9B00033DEC0 /* Array+isSorted.swift */,
+				214F6889268EEA260033DEC0 /* ValidationViewModifier.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		21AA5EBB26960AB80050A9DA /* SwipeAction */ = {
+			isa = PBXGroup;
+			children = (
+				214F6876268DA07F0033DEC0 /* DeleteViewModifier.swift */,
+				21AA5EC2269623490050A9DA /* EditAction.swift */,
+				21AA5EC82696403A0050A9DA /* ActionType.swift */,
+				21AA5EC4269623570050A9DA /* DeleteAction.swift */,
+				21AA5EB926960AAD0050A9DA /* SwipeActionViewModifier.swift */,
+			);
+			path = SwipeAction;
+			sourceTree = "<group>";
+		};
+		21ACC774265A59EE009D477C /* WorkoutOverview */ = {
+			isa = PBXGroup;
+			children = (
+				21ACC775265A5A05009D477C /* ChartViewModel.swift */,
+				A6090D492660FB8C0033D373 /* Sample.swift */,
+			);
+			path = WorkoutOverview;
+			sourceTree = "<group>";
+		};
+		21ACC777265A5A0C009D477C /* WorkoutOverview */ = {
+			isa = PBXGroup;
+			children = (
+				21ACC778265A5A2B009D477C /* Chart */,
+				21ACC786265A5A4E009D477C /* WorkoutOverview.swift */,
+				A6363F1B26698DEA00ECB62F /* WorkoutDataTable.swift */,
+			);
+			path = WorkoutOverview;
+			sourceTree = "<group>";
+		};
+		21ACC778265A5A2B009D477C /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				21ACC779265A5A2B009D477C /* ViewControllerRepresentable.swift */,
+				21F79BDC26973433003B3D5C /* RectMarker.swift */,
+				21ACC77C265A5A2B009D477C /* ChartXAxisFormatter.swift */,
+				21F79BDA269702B0003B3D5C /* Double+Round.swift */,
+				21ACC77D265A5A2B009D477C /* ChartUIKit */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		21ACC77D265A5A2B009D477C /* ChartUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				21ACC77E265A5A2B009D477C /* ViewController.swift */,
+				5B43EBA326866FBB00287D6C /* Main.storyboard */,
+			);
+			path = ChartUIKit;
+			sourceTree = "<group>";
+		};
+		21ED088426829F62008641AA /* EditPatient */ = {
+			isa = PBXGroup;
+			children = (
+				21ED088226829F22008641AA /* EditPatient.swift */,
+				2131F20B269F2E4700488293 /* EditTrainingZones.swift */,
+				214F687C268DB5DD0033DEC0 /* StudyGroupPicker.swift */,
+				21AA5EB1269032110050A9DA /* StudyGroupList.swift */,
+				214F688D268F87A60033DEC0 /* AddStudyGroup.swift */,
+				21AA5EC626962FD60050A9DA /* ActiveToggleStyle.swift */,
+				214F687E268DB5EC0033DEC0 /* Credentials.swift */,
+				21ED088526829F70008641AA /* SaveButton.swift */,
+			);
+			path = EditPatient;
+			sourceTree = "<group>";
+		};
+		49DFCC0827453151003C0FD5 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				49DFCC0927453163003C0FD5 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		6AD4C3892676282B003D3A1C /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				6AD4C3682675209A003D3A1C /* RoundedCornersModifier.swift */,
+				6AD4C38A26762848003D3A1C /* ButtonStyling.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		8338FF24267D011400B26F01 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8338FF2B267D32FB00B26F01 /* MockModelFactory.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		833BF9FF265FAE5B00D98AC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6090D3A2660E4C70033D373 /* Package.swift */,
+				A6090D392660E4B30033D373 /* Shared */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1E2F51A275E129B0083AAD8 /* NewsPanel */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2F51B275E12D50083AAD8 /* NewsPanelView.swift */,
+			);
+			path = NewsPanel;
+			sourceTree = "<group>";
+		};
+		A6090D462660FA760033D373 /* PatientsSummary */ = {
+			isa = PBXGroup;
+			children = (
+				21ED088426829F62008641AA /* EditPatient */,
+				216147B7268539A0008BB76B /* SortableHeader.swift */,
+				216147AF26852E0C008BB76B /* TableColumnHeaders.swift */,
+				6AD4C36A2675262A003D3A1C /* TrainingsRatingsGraph.swift */,
+				A6090D522660FCEF0033D373 /* PatientsSummary.swift */,
+				219488C6268768E000CA13BE /* Toolbar.swift */,
+				6A7646C02677C54500E8282C /* SearchBar.swift */,
+				6A4B340E268A37760044E576 /* PatientRow.swift */,
+				69F7810D269DEBE60002DB64 /* Checkbox.swift */,
+			);
+			path = PatientsSummary;
+			sourceTree = "<group>";
+		};
+		A6090D4B2660FC5E0033D373 /* PatientsSummary */ = {
+			isa = PBXGroup;
+			children = (
+				2131F1F62699DAA300488293 /* Refresh.swift */,
+				216147AD26852DE4008BB76B /* SortState.swift */,
+				A6090D66266390A50033D373 /* PatientSummaryViewModel.swift */,
+				21ED088726829FD9008641AA /* EditPatientViewModel.swift */,
+				2131F205269E2D8700488293 /* EditPatientViewModel+Save.swift */,
+				2131F20F26A1A52E00488293 /* Gender.swift */,
+				21AA5EB5269497F00050A9DA /* EditPatientViewModel+StudyGroupPicker.swift */,
+				2131F209269F2C4500488293 /* EditPatientTrainingZones.swift */,
+				214F6884268EE93F0033DEC0 /* Validation */,
+			);
+			path = PatientsSummary;
+			sourceTree = "<group>";
+		};
+		A6090D6A2663940A0033D373 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A6509340268F57C0002F4FB8 /* Color.swift */,
+				83C000B5266E2AA60074DC34 /* Date+Helper.swift */,
+				216147B326853752008BB76B /* Bool+Comparable.swift */,
+				216147B92685EC5B008BB76B /* Array+Comparable+Hashable.swift */,
+				2131F1FA269AE91C00488293 /* ProgressViewButtonStyle.swift */,
+				21AA5EBB26960AB80050A9DA /* SwipeAction */,
+				5B43EB9F2683720600287D6C /* String+localized.swift */,
+				5B13082D2696FAEB00414F25 /* XlsxDocument.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A6509342268F5885002F4FB8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A6509343268F589B002F4FB8 /* WorkoutsOverviewWorkoutMediator.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A6C3C59F26444FDC00C79EB7 = {
+			isa = PBXGroup;
+			children = (
+				698CBF02268242BF00E475B4 /* Localizable.strings */,
+				A6C3C5AA26444FDC00C79EB7 /* MRI_iPad */,
+				A6C3C5A926444FDC00C79EB7 /* Products */,
+				833BF9FF265FAE5B00D98AC8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
+		A6C3C5A926444FDC00C79EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6C3C5A826444FDC00C79EB7 /* MRI_iPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6C3C5AA26444FDC00C79EB7 /* MRI_iPad */ = {
+			isa = PBXGroup;
+			children = (
+				49DFCC0827453151003C0FD5 /* Supporting */,
+				A6090D6A2663940A0033D373 /* Util */,
+				A6C3C5C8264C0DDF00C79EB7 /* Model */,
+				A6C3C5C6264C0DCE00C79EB7 /* ViewModels */,
+				A6C3C5C5264C0DC700C79EB7 /* Views */,
+				A6C3C5BD26452DF900C79EB7 /* UIElements */,
+				A6C3C5AB26444FDC00C79EB7 /* MRI_iPad.swift */,
+				A6C3C5AD26444FDC00C79EB7 /* ContentView.swift */,
+				A6C3C5AF26444FDD00C79EB7 /* Assets.xcassets */,
+				6AD0D76326628D1B0015AFD6 /* Color.xcassets */,
+			);
+			path = MRI_iPad;
+			sourceTree = "<group>";
+		};
+		A6C3C5BD26452DF900C79EB7 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				6AD4C3892676282B003D3A1C /* ViewModifiers */,
+				6AD4C36C267536AF003D3A1C /* RangeGraph.swift */,
+				A6363F1D2669924E00ECB62F /* StackView.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		A6C3C5C5264C0DC700C79EB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2F51A275E129B0083AAD8 /* NewsPanel */,
+				A6090D462660FA760033D373 /* PatientsSummary */,
+				21ACC777265A5A0C009D477C /* WorkoutOverview */,
+				A6C3C5D8264F20CF00C79EB7 /* PatientOverview */,
+				A69E780B2685EDB6003FF6C5 /* View.swift */,
+				A69E780D2685EDCB003FF6C5 /* EdgeBorder.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6C3C5C6264C0DCE00C79EB7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A6090D4B2660FC5E0033D373 /* PatientsSummary */,
+				21ACC774265A59EE009D477C /* WorkoutOverview */,
+				A6C3C5E826531C8100C79EB7 /* PatientOverview */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A6C3C5C8264C0DDF00C79EB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8362C339269DE9D3008E2C6C /* LoginDoctorModel.swift */,
+				8338FF24267D011400B26F01 /* Helper */,
+				8338FF22267CF8FD00B26F01 /* Model.swift */,
+				8338FF27267D285300B26F01 /* ServerModel.swift */,
+				8338FF29267D318000B26F01 /* MockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6C3C5D8264F20CF00C79EB7 /* PatientOverview */ = {
+			isa = PBXGroup;
+			children = (
+				A6509342268F5885002F4FB8 /* Helper */,
+				A69B1205268A47F500F66D55 /* ActivityBox.swift */,
+				A69B1203268A47BF00F66D55 /* ActivityOverviewBox.swift */,
+				A69B11FF268A479400F66D55 /* PatientOverview.swift */,
+				A6090D59266103C70033D373 /* PatientCalendar.swift */,
+				A6090D6426626F760033D373 /* CalendarCell.swift */,
+				A6363F1F2677568C00ECB62F /* WeekSummary.swift */,
+				69E19A3726948816007D8078 /* TrainingsRateGraph.swift */,
+				A618EE3F26A1A781006E1794 /* PatientInfoSheet.swift */,
+			);
+			path = PatientOverview;
+			sourceTree = "<group>";
+		};
+		A6C3C5E826531C8100C79EB7 /* PatientOverview */ = {
+			isa = PBXGroup;
+			children = (
+				A6090D62266104040033D373 /* CalendarModel.swift */,
+				A69B1208268A640500F66D55 /* WeekSummaryViewModel.swift */,
+				5B1088C226A311BE00C47332 /* PatientOverviewViewModel.swift */,
+			);
+			path = PatientOverview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6C3C5A726444FDC00C79EB7 /* MRI_iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C3C5B726444FDD00C79EB7 /* Build configuration list for PBXNativeTarget "MRI_iPad" */;
+			buildPhases = (
+				A6C3C5A426444FDC00C79EB7 /* Sources */,
+				A6C3C5E3264FFA9B00C79EB7 /* SwiftLint */,
+				A6C3C5A526444FDC00C79EB7 /* Frameworks */,
+				A6C3C5A626444FDC00C79EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				698CBEF126822EE600E475B4 /* PBXTargetDependency */,
+			);
+			name = MRI_iPad;
+			packageProductDependencies = (
+				A6C3C5E5264FFF0B00C79EB7 /* FontAwesomeSwiftUI */,
+				21ACC789265A5AB5009D477C /* Charts */,
+				A6090D37266060400033D373 /* Prototyper */,
+				A6090D3B2660E4D10033D373 /* Shared */,
+				5B14832F266A3FF300D0F4E0 /* TouchVisualizer */,
+				2131F203269CCC7F00488293 /* Introspect */,
+			);
+			productName = DoctorsApp;
+			productReference = A6C3C5A826444FDC00C79EB7 /* MRI_iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6C3C5A026444FDC00C79EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					A6C3C5A726444FDC00C79EB7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A6C3C5A326444FDC00C79EB7 /* Build configuration list for PBXProject "MRI_iPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				Base,
+			);
+			mainGroup = A6C3C59F26444FDC00C79EB7;
+			packageReferences = (
+				A6C3C5BA2644506900C79EB7 /* XCRemoteSwiftPackageReference "Prototyper" */,
+				A6C3C5E4264FFF0B00C79EB7 /* XCRemoteSwiftPackageReference "FontAwesomeSwiftUI" */,
+				21ACC788265A5AB5009D477C /* XCRemoteSwiftPackageReference "Charts" */,
+				5B14832E266A3FF300D0F4E0 /* XCRemoteSwiftPackageReference "TouchVisualizer" */,
+				2131F202269CCC7F00488293 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
+			productRefGroup = A6C3C5A926444FDC00C79EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6C3C5A726444FDC00C79EB7 /* MRI_iPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6C3C5A626444FDC00C79EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698CBF00268242BF00E475B4 /* Localizable.strings in Resources */,
+				5B43EBA126866FBB00287D6C /* Main.storyboard in Resources */,
+				6AD0D76426628D1B0015AFD6 /* Color.xcassets in Resources */,
+				A6C3C5B026444FDD00C79EB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6C3C5E3264FFA9B00C79EB7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6C3C5A426444FDC00C79EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C3C5AE26444FDC00C79EB7 /* ContentView.swift in Sources */,
+				6AD4C38B26762848003D3A1C /* ButtonStyling.swift in Sources */,
+				8362C33A269DE9D3008E2C6C /* LoginDoctorModel.swift in Sources */,
+				6A4B340F268A37760044E576 /* PatientRow.swift in Sources */,
+				21F79BDD26973433003B3D5C /* RectMarker.swift in Sources */,
+				21AA5EB2269032110050A9DA /* StudyGroupList.swift in Sources */,
+				216147AE26852DE4008BB76B /* SortState.swift in Sources */,
+				2131F21026A1A52E00488293 /* Gender.swift in Sources */,
+				6AD4C3692675209A003D3A1C /* RoundedCornersModifier.swift in Sources */,
+				A6090D552660FCEF0033D373 /* PatientsSummary.swift in Sources */,
+				6A7646C12677C54500E8282C /* SearchBar.swift in Sources */,
+				214F687F268DB5EC0033DEC0 /* Credentials.swift in Sources */,
+				214F6888268EE9B00033DEC0 /* Array+isSorted.swift in Sources */,
+				A6090D6526626F760033D373 /* CalendarCell.swift in Sources */,
+				214F6883268E18270033DEC0 /* Validation.swift in Sources */,
+				21ACC784265A5A2B009D477C /* ViewController.swift in Sources */,
+				2131F1FB269AE91C00488293 /* ProgressViewButtonStyle.swift in Sources */,
+				21ACC776265A5A05009D477C /* ChartViewModel.swift in Sources */,
+				8338FF28267D285300B26F01 /* ServerModel.swift in Sources */,
+				21AA5EBA26960AAD0050A9DA /* SwipeActionViewModifier.swift in Sources */,
+				8338FF2A267D318000B26F01 /* MockModel.swift in Sources */,
+				8338FF2C267D32FB00B26F01 /* MockModelFactory.swift in Sources */,
+				216147B8268539A0008BB76B /* SortableHeader.swift in Sources */,
+				21ACC783265A5A2B009D477C /* ChartXAxisFormatter.swift in Sources */,
+				216147B126852E0C008BB76B /* TableColumnHeaders.swift in Sources */,
+				A6509344268F589B002F4FB8 /* WorkoutsOverviewWorkoutMediator.swift in Sources */,
+				5B13082E2696FAEB00414F25 /* XlsxDocument.swift in Sources */,
+				2131F20A269F2C4500488293 /* EditPatientTrainingZones.swift in Sources */,
+				A6090D4A2660FB8C0033D373 /* Sample.swift in Sources */,
+				A6090D67266390A50033D373 /* PatientSummaryViewModel.swift in Sources */,
+				A6363F1E2669924E00ECB62F /* StackView.swift in Sources */,
+				A1E2F51C275E12D50083AAD8 /* NewsPanelView.swift in Sources */,
+				2131F1F72699DAA300488293 /* Refresh.swift in Sources */,
+				A69B1204268A47BF00F66D55 /* ActivityOverviewBox.swift in Sources */,
+				A69B1206268A47F500F66D55 /* ActivityBox.swift in Sources */,
+				219488C7268768E000CA13BE /* Toolbar.swift in Sources */,
+				5B1088C326A311BE00C47332 /* PatientOverviewViewModel.swift in Sources */,
+				A69E780E2685EDCB003FF6C5 /* EdgeBorder.swift in Sources */,
+				21ED088326829F22008641AA /* EditPatient.swift in Sources */,
+				216147BA2685EC5B008BB76B /* Array+Comparable+Hashable.swift in Sources */,
+				21F79BDB269702B0003B3D5C /* Double+Round.swift in Sources */,
+				A6363F1C26698DEA00ECB62F /* WorkoutDataTable.swift in Sources */,
+				21AA5EC5269623570050A9DA /* DeleteAction.swift in Sources */,
+				A6090D63266104040033D373 /* CalendarModel.swift in Sources */,
+				21AA5EC3269623490050A9DA /* EditAction.swift in Sources */,
+				214F688E268F87A60033DEC0 /* AddStudyGroup.swift in Sources */,
+				214F6886268EE9890033DEC0 /* Publisher+Validator.swift in Sources */,
+				69E19A3826948816007D8078 /* TrainingsRateGraph.swift in Sources */,
+				A69E780C2685EDB6003FF6C5 /* View.swift in Sources */,
+				21ED088626829F70008641AA /* SaveButton.swift in Sources */,
+				21ACC787265A5A4E009D477C /* WorkoutOverview.swift in Sources */,
+				21AA5EC92696403A0050A9DA /* ActionType.swift in Sources */,
+				A6090D5E266103C70033D373 /* PatientCalendar.swift in Sources */,
+				A6363F202677568C00ECB62F /* WeekSummary.swift in Sources */,
+				214F687D268DB5DD0033DEC0 /* StudyGroupPicker.swift in Sources */,
+				69F7810E269DEBE60002DB64 /* Checkbox.swift in Sources */,
+				A6509341268F57C0002F4FB8 /* Color.swift in Sources */,
+				216147B426853752008BB76B /* Bool+Comparable.swift in Sources */,
+				21AA5EC726962FD60050A9DA /* ActiveToggleStyle.swift in Sources */,
+				2131F206269E2D8700488293 /* EditPatientViewModel+Save.swift in Sources */,
+				83C000B6266E2AA60074DC34 /* Date+Helper.swift in Sources */,
+				21ED088826829FD9008641AA /* EditPatientViewModel.swift in Sources */,
+				A69B1209268A640500F66D55 /* WeekSummaryViewModel.swift in Sources */,
+				214F6877268DA07F0033DEC0 /* DeleteViewModifier.swift in Sources */,
+				21ACC780265A5A2B009D477C /* ViewControllerRepresentable.swift in Sources */,
+				A618EE4026A1A781006E1794 /* PatientInfoSheet.swift in Sources */,
+				5B43EBA02683720600287D6C /* String+localized.swift in Sources */,
+				8338FF23267CF8FD00B26F01 /* Model.swift in Sources */,
+				A69B1200268A479400F66D55 /* PatientOverview.swift in Sources */,
+				6AD4C36B2675262A003D3A1C /* TrainingsRatingsGraph.swift in Sources */,
+				6AD4C36D267536AF003D3A1C /* RangeGraph.swift in Sources */,
+				A6C3C5AC26444FDC00C79EB7 /* MRI_iPad.swift in Sources */,
+				214F688A268EEA260033DEC0 /* ValidationViewModifier.swift in Sources */,
+				2131F20C269F2E4700488293 /* EditTrainingZones.swift in Sources */,
+				21AA5EB6269497F00050A9DA /* EditPatientViewModel+StudyGroupPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		698CBEF126822EE600E475B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 698CBEF026822EE600E475B4 /* Shared */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B43EBA326866FBB00287D6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2131F1FF269B82B600488293 /* de */,
+				495574242745339B005E115E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		698CBF02268242BF00E475B4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				698CBF03268242C200E475B4 /* de */,
+				694D856E26839EC600D03359 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6C3C5B526444FDD00C79EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6C3C5B626444FDD00C79EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6C3C5B826444FDD00C79EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MRI_iPad/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.tum.in.www1.university.ios2122.mri.ipad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A6C3C5B926444FDD00C79EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MRI_iPad/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.tum.in.www1.university.ios2122.mri.ipad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6C3C5A326444FDC00C79EB7 /* Build configuration list for PBXProject "MRI_iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C3C5B526444FDD00C79EB7 /* Debug */,
+				A6C3C5B626444FDD00C79EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C3C5B726444FDD00C79EB7 /* Build configuration list for PBXNativeTarget "MRI_iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C3C5B826444FDD00C79EB7 /* Debug */,
+				A6C3C5B926444FDD00C79EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2131F202269CCC7F00488293 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		21ACC788265A5AB5009D477C /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = revision;
+				revision = 9ea6c62b9642682917c7fe1abbd3b56da7e498b0;
+			};
+		};
+		5B14832E266A3FF300D0F4E0 /* XCRemoteSwiftPackageReference "TouchVisualizer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PSchmiedmayer/TouchVisualizer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		A6C3C5BA2644506900C79EB7 /* XCRemoteSwiftPackageReference "Prototyper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ls1intum/Prototyper.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		A6C3C5E4264FFF0B00C79EB7 /* XCRemoteSwiftPackageReference "FontAwesomeSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onmyway133/FontAwesomeSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2131F203269CCC7F00488293 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2131F202269CCC7F00488293 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+		21ACC789265A5AB5009D477C /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21ACC788265A5AB5009D477C /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		5B14832F266A3FF300D0F4E0 /* TouchVisualizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B14832E266A3FF300D0F4E0 /* XCRemoteSwiftPackageReference "TouchVisualizer" */;
+			productName = TouchVisualizer;
+		};
+		698CBEF026822EE600E475B4 /* Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Shared;
+		};
+		A6090D37266060400033D373 /* Prototyper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C3C5BA2644506900C79EB7 /* XCRemoteSwiftPackageReference "Prototyper" */;
+			productName = Prototyper;
+		};
+		A6090D3B2660E4D10033D373 /* Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Shared;
+		};
+		A6C3C5E5264FFF0B00C79EB7 /* FontAwesomeSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C3C5E4264FFF0B00C79EB7 /* XCRemoteSwiftPackageReference "FontAwesomeSwiftUI" */;
+			productName = FontAwesomeSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A6C3C5A026444FDC00C79EB7 /* Project object */;
+}
