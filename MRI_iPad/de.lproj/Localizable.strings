@@ -1,0 +1,233 @@
+"%@kcal" = "%@kcal";
+"%@m" = "%@m";
+"CW" = "KW";
+"Loading Overview Information" = "Lade Übersichts Informationen";
+"Study Group" = "Studiengruppe";
+"Goal" = "Ziel";
+"Workout is loading..." = "Workout wird geladen...";
+"WorkoutOverview" = "Workout Übersicht";
+
+/* PatientsSummary */
+"All Patients" = "Alle Patienten";
+"Confirm" = "Bestätigen";
+"Select time range:" = "Zeitspanne wählen:";
+"not specified" = "nicht spezifiziert";
+/* - loadingState */
+"About to load patients" = "Patienten werden jeden Moment geladen";
+"Loading patients..." = "Patienten werden geladen...";
+"Couldn't load patients!" = "Patienten konnten nicht geladen werden!";
+
+/* TrainingsRatingsGraph */
+"none" = "keine";
+
+/* - Searchbar */
+"Filter patients ..." = "Patienten filtern ...";
+
+/* - ListItem */
+ "%@ of %@ (%@%)" = "%@ von %@ (%@%)";
+
+/* - Toolbar */
+"apply" = "bestätigen";
+"Export" = "Exportieren";
+"Time range:" = "Zeitspanne:";
+"Select time range" = "Zeitspanne wählen";
+"from:" = "von:";
+"to:" = "bis:";
+"All data" = "Gesamter Zeitraum";
+"Last 7 days" = "Letzte 7 Tage";
+
+/* - PatientRow */
+"Name" = "Name";
+"Born" = "Geboren";
+"From" = "Von";
+"To" = "Bis";
+"Progress" = "Fortschritt";
+"∑ h" = "∑ h";
+"Ratings" = "Ratings";
+"Training quota" = "Trainingsrate";
+"Type" = "Typ";
+"Heart rate" = "Herzfrequenz";
+
+/* - PatientRow values */
+"%lldh" = "%lldh";    // ∑ h
+"%lld%%" = "%lld%%";  // Training quota
+"%@" = "%@";          // Date values
+"%@, %@" = "%@, %@";  // Name (lastName, firstName)
+
+/* PatientOverview */
+"%@ %@" = "%@ %@";  // "firstName lastName"
+"of" = "von";
+"%lld/%lld" = "%lld/%lld";
+"(%lld%%)" = "(%lld%%)";
+"%lld of %lld (%lld%%)" = "%lld of %lld (%lld%%)";  // trainings quota
+"Trainings" = "Trainings";
+"undefined" = "nicht gesetzt";
+"Loading calendar..." = "Der Kalender wird geladen...";
+"Could not load calendar!" = "Kalender konnte nicht geladen werden.";
+"Trainingsplan uploaded successfully" = "Der Trainingsplan wurde erfolgreich hochgeladen";
+"Trainingsplan upload failed" = "Der Upload ist fehlgeschlagen";
+"Please check if your trainingsplan has the right format and try again." = "Bitte prüfen Sie ob Ihr Trainingsplan Template die richtigen Eingaben beinhaltet.";
+"Got it!" = "ok";
+"(Speed)" = "(Geschwindigkeit)";
+"(Heart rate)" = "(Herzfrequenz)";
+
+
+/* - PatientCalendar */
+"Loading calendar..." = "Kalender wird geladen...";
+"Could not load calendar!" = "Kalender konnte nicht geladen werden!";
+"steps" = "Schritte";
+"%lld" = "%lld";
+"%lld steps" = "%lld Schritte";
+"%lld km" = "%lld km";
+"%@ km" = "%@ km";      // weekly sum
+/* - PatientCalendar controls */
+"<" = "<";
+">" = ">";
+
+/* RangeGraph */
+"%@%%" = "%@%%";
+
+/* - Mail */
+"Your training" = "Dein Training";
+"Hello " = "Hallo ";
+
+/* Workout Overview*/
+
+"%lldkcal" = "%lldkcal";
+"min" = "Min";
+"max" = "Max";
+"heart rate" = "Herzfrequenz";
+"speed" = "Geschwindigkeit";
+"Rating" = "Bewertung";
+"bad" = "schlecht";
+"medium" = "mittel";
+"good" = "gut";
+"missing" = "fehlt";
+"Intensity" = "Intensität";
+"Comment" = "Kommentar";
+"no comment given" = "Kein Kommentar";
+"rolling average:" = "Durschnittsgröße:";
+
+"Fetching has not started..." = "Download hat noch nicht begonnen...";
+
+/* Workout Data Table*/
+"No." = "Nr.";
+"Ø Heart rate" = "Ø Herzfrequenz";
+"Max. Heart rate" = "Max. Herzfrequenz";
+"Ø Speed" = "Ø Geschwindigkeit";
+"Max. Speed" = "Max. Geschwindigkeit";
+"Duration" = "Dauer";
+"Distance" = "Distanz";
+"1 km" = "1 km";
+"%lld bpm" = "%lld bpm";
+"%lld:%@" = "%lld:%@";
+"%@ km/h" = "%@ km/h";
+
+/* - Week days */
+"Monday" = "Montag";
+"Tuesday" = "Dienstag";
+"Wednesday" = "Mittwoch";
+"Thursday" = "Donnerstag";
+"Friday" = "Freitag";
+"Saturday" = "Samstag";
+"Sunday" = "Sonntag";
+
+/* - Months */
+
+"January" = "Januar";
+"February" = "Februar";
+"March" = "März";
+"April" = "April";
+"May" = "Mai";
+"June" = "Juni";
+"July" = "Juli";
+"August" = "August";
+"September" = "September";
+"October" = "Oktober";
+"November" = "November";
+"December" = "Dezember";
+
+/* AddPatientAccount Form */
+"Create Patient Account" = "Patienten Account erstellen";
+"Edit Patient Account" = "Patienten Account bearbeiten";
+"Save" = "Speichern";
+
+"Patient Profile" = "Patienten Profil";
+"Active" = "Aktiv";
+"Username" = "Nutzername";
+"First Name" = "Vorname";
+"Last Name" = "Nachname";
+"Email Address" = "E-Mail Adresse";
+"Day of birth" = "Geburtsdatum";
+"Gender" = "Geschlecht";
+"male" = "männlich";
+"female" = "weiblich";
+"diverse" = "divers";
+"Weight" = "Gewicht";
+"Height" = "Größe";
+
+"Treatment" = "Behandlung";
+"Study Group" = "Studiengruppe";
+"Start Date" = "Anfangsdatum";
+"End Date" = "Enddatum";
+
+"Training Zones" = "Trainings-Zonen";
+"Value %lld" = "Wert %lld";
+
+"Speed Training Zones (Running): " = "Tempo Trainings-Zonen (Laufen): ";
+
+"Patient registered successfully!" = "Patient erfolgreich erstellt!";
+"Username: %@" = "Nutzername: %@";
+"Password: %@" = "Passwort: %@";
+"Workout Type" = "Workouttyp";
+"Unit" = "Einheit";
+"Add Training Zones" = "Trainings-Zonen hinzufügen";
+"No Study Group" = "Keine Studiengruppe";
+"Running" = "Laufen";
+"Cycling" = "Fahrradfahren";
+
+
+"Error!" = "Fehler!";
+"Username must not be empty" = "Nutzername darf nicht leer sein";
+"Username must have at least 3 characters" = "Nutzername muss länger als 3 Zeichen sein";
+"First name must not be empty" = "Vorname darf nicht leer sein";
+"Last name must not be empty" = "Nachname darf nicht leer sein";
+"Email address must not be empty" = "Email-Adresse darf nicht leer sein";
+"Email address is not valid" = "Email-Adresse-Format ist ungültig";
+"End date must be in dd.mm.yyyy format" = "Enddatum muss die Format dd.mm.yyyy haben";
+"Height must be a number" = "Größe muss eine Zahl sein";
+"Weight must be a float" = "Gewicht muss eine Float sein";
+"Comment must be more than 3 characters!" = "Kommentar muss länger als 3 Zeichen sein!";
+"Goal must not be empty" = "Ziel darf nicht leer sein";
+"Goal must have at least 3 characters!" = "Ziel der Behandlung muss länger als 3 Zeichen sein!";
+"Birthday must not be empty" = "Geburtsdatum darf nicht leer sein";
+"Birthday must be in dd.mm.yyyy format" = "Geburtsdatum muss die Format dd.mm.yyyy haben";
+"Start date must not be empty" = "Anfangsdatum darf nicht leer sein";
+"Start date must be in dd.mm.yyyy format" = "Startdatum muss die Format dd.mm.yyyy haben";
+"Study group must not be empty" = "Studiengruppe darf nicht leer sein";
+"End date must not before start date" = "Enddatum sollte nicht vor Startdatum sein";
+"Comment must have at least 3 characters!" = "Kommentar muss länger als 3 Zeichen sein!";
+"One or more training zones values are empty" = "Eine oder mehrere der Trainings-Zonen-Wert sind leer";
+"Training zones value cannot be lower than its predecessor!" = "Trainings-Zonen-Wert kann nicht kleiner als vorangegangener Wert sein!";
+"All training zones values must be a number" = "Alle Trainings-Zonen müssen eine Zahl sein";
+"All training zones values must be 0 - 999" = "Alle Trainings-Zonen müssen von 0 bis 999 sein";
+"Workout type must not be empty" = "Workouttyp darf nicht leer sein";
+"Unit must not be empty" = "Einheit darf nicht leer sein";
+
+"Register new account failed!" = "Erstellung eines neuen Accounts ist fehlgeschlagen!";
+"Register new patient failed!" = "Erstellung eines neuen Patienten ist fehlgeschlagen!";
+"Register training zones failed!" = "Hinzufügen der Trainings-Zonen fehlgeschlagen!";
+"Register study group failed!" = "Erstellen der Studiengruppe fehlgeschlagen!";
+
+/* - Study Group Picker */
+"Study group name must be more than 3 characters!" = "Name der Studiengruppe muss mehr als 3 Zeichen beinhalten!";
+"Close" = "Schließen";
+"Study group created successfully!" = "Studiengruppe erfolgreich erstellt!";
+"Select Study Group" = "Studiengruppe wählen";
+"Add" = "Hinzufügen";
+"Okay" = "Okay";
+
+/* - Delete alert */
+"will be deleted permanently, continue?" = "wird dauerhaft gelöscht, trotzdem weitermachen?";
+"Delete" = "Löschen";
+"Cancel" = "Zurück";
