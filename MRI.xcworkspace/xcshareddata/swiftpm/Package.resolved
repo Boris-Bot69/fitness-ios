@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Charts",
+        "repositoryURL": "https://github.com/danielgindi/Charts.git",
+        "state": {
+          "branch": null,
+          "revision": "9ea6c62b9642682917c7fe1abbd3b56da7e498b0",
+          "version": null
+        }
+      },
+      {
+        "package": "FontAwesomeSwiftUI",
+        "repositoryURL": "https://github.com/onmyway133/FontAwesomeSwiftUI",
+        "state": {
+          "branch": null,
+          "revision": "112baccbd390338dda124f26cd395e8cbd13ecda",
+          "version": "1.0.4"
+        }
+      },
+      {
+        "package": "Prototyper",
+        "repositoryURL": "https://github.com/ls1intum/Prototyper.git",
+        "state": {
+          "branch": "develop",
+          "revision": "9509a04ed4832c7fdd918028f263e4828577c75b",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-algorithms",
+        "repositoryURL": "https://github.com/apple/swift-algorithms",
+        "state": {
+          "branch": null,
+          "revision": "2327673b0e9c7e90e6b1826376526ec3627210e4",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "state": {
+          "branch": null,
+          "revision": "6583ac70c326c3ee080c1d42d9ca3361dca816cd",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "Introspect",
+        "repositoryURL": "https://github.com/siteline/SwiftUI-Introspect.git",
+        "state": {
+          "branch": "master",
+          "revision": "72a509c93166540c0adf8323fd2652daade7f9f6",
+          "version": null
+        }
+      },
+      {
+        "package": "TouchVisualizer",
+        "repositoryURL": "https://github.com/PSchmiedmayer/TouchVisualizer.git",
+        "state": {
+          "branch": null,
+          "revision": "00e20052f772039364f9af32345ba00ec287a024",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
