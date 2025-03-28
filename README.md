@@ -1,5 +1,3 @@
-# iPraktikum '21 TUMSM
-
 Our system provides a convenient solution for physicians/doctors to provide telemonitoring services to athletes/patients.
 
 Athletes will use an [iPhone App](/iPhone) to easily send their health data to their physician. Physicians will use an [iPad App](/iPad) to monitor their athletes and provide feedback on their progress. The [Server](/Server) provides the necessary services for data storage, processing and account management.
