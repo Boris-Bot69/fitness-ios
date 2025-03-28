@@ -1,0 +1,89 @@
+site_name: TUMSM Documentation
+theme:
+  name: material
+  primary: blue
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Open Sans
+  language: en
+  logo: assets/img/icon.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    # - navigation.tabs # activate, when left-hand page tree becomes too long
+    - navigation.sections
+  icon:
+    repo: fontawesome/brands/bitbucket
+markdown_extensions:
+  - abbr
+  - smarty
+  - toc:
+      permalink: True
+  - sane_lists
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml  # comment out when working offline
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences: # render mermaid diagrams (https://github.com/squidfunk/mkdocs-material/issues/693)
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.escapeall
+  - attr_list
+  - def_list
+  - admonition
+plugins:
+  - search
+  - macros:
+      include_dir: .
+      module_name: docs/macros
+  - pdf-export:
+      media_type: print
+      combined: true
+      combined_output_path: TUMSM.pdf
+      enabled_if_env: ENABLE_PDF_EXPORT
+  - mkdocstrings:
+      # see https://mkdocstrings.github.io/handlers/python/#finding-modules
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append("docs") # include `macros.py` module
+            - sys.path.append("tumsm_server") # include `tumsm_server` package
+          rendering:
+            show_root_heading: True
+            show_category_heading: False
+extra:
+    social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ls1intum
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/ls1intum/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/ls1intum/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCShLLpWRs06-zlvucOg9xxA/
+extra_css:
+  - assets/css/custom.css
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js

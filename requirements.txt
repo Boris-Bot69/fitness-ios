@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-material
+plantuml-markdown
+mkdocstrings
+mkdocs-macros-plugin
+mkdocs-pdf-export-plugin
