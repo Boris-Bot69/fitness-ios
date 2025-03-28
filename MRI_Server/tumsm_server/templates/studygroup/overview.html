@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">All Studygroup</h1>
+
+    <h2 class="mt-5">Statistics</h2>
+    <ul>
+        <li><em># of studygroups</em>: {{studygroups.paginate().total}}</li>
+    </ul>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Overview</h2>
+        </div>
+        <div class="col text-right">
+            <a href="add/" class="btn btn-primary" role="button">Add Studygroup</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for studygroup in studygroups %}
+            <tr>
+                <th scope="row">{{studygroup.id}}</th>
+                <td>{{studygroup.name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1 class="mt-5">All Studygroup members</h1>
+
+    <h2 class="mt-5">Statistics</h2>
+    <ul>
+        <li><em># of studygroup members</em>: {{studygroup_members.paginate().total}}</li>
+    </ul>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Overview</h2>
+        </div>
+        <div class="col text-right">
+            <a href="./member/add/" class="btn btn-primary" role="button">Add Studygroup Member</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Studygroup</th>
+                <th scope="col">Patient</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for studygroup_member in studygroup_members %}
+            <tr>
+                <th scope="row">{{studygroup_member.studygroup}}</th>
+                <td>{{studygroup_member.patient}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1 class="mt-5">All Studygroup trainers</h1>
+
+    <h2 class="mt-5">Statistics</h2>
+    <ul>
+        <li><em># of studygroup trainers</em>: {{studygroup_trainers.paginate().total}}</li>
+    </ul>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Overview</h2>
+        </div>
+        <div class="col text-right">
+            <a href="./trainer/add/" class="btn btn-primary" role="button">Add Studygroup Trainer</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Studygroup</th>
+                <th scope="col">Trainer</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for studygroup_trainer in studygroup_trainers %}
+            <tr>
+                <th scope="row">{{studygroup_trainer.studygroup}}</th>
+                <td>{{studygroup_trainer.trainer}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

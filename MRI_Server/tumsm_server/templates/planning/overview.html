@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+<h1 class="mt-5">All planned Workouts</h1>
+
+    <h2 class="mt-5">Statistics</h2>
+    <ul>
+        <li><em># of planned workouts</em>: {{planned_workouts.paginate().total}}</li>
+    </ul>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Overview</h2>
+        </div>
+        <div class="col text-right">
+            <a href="./add" class="btn btn-primary" role="button">Add Planned Workout</a>
+        </div>
+        <div>
+            <a href="./template" class="btn btn-primary" role="button">Download Import Template File</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Patient</th>
+                <th scope="col">Planned Date</th>
+                <th scope="col">Type</th>
+                <th scope="col">Max Heart Rate</th>
+                <th scope="col">Min Duration</th>
+                <th scope="col">Min Distance</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for plannedWorkout in planned_workouts %}
+            <tr>
+                <th scope="row">{{plannedWorkout.id}}</th>
+                <td>{{plannedWorkout.patient}}</td>
+                <td>{{plannedWorkout.plannedDate}}</td>
+                <td>{{plannedWorkout.type}}</td>
+                <td>{{plannedWorkout.maxHeartRate}}</td>
+                <td>{{plannedWorkout.minDuration}}</td>
+                <td>{{plannedWorkout.minDistance}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

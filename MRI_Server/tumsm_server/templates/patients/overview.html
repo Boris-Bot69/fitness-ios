@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">All Patients</h1>
+
+    <h2 class="mt-5">Statistics</h2>
+    <ul>
+        <li><em># of patients</em>: {{patients.paginate().total}}</li>
+    </ul>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Overview</h2>
+        </div>
+        <div class="col text-right">
+            <a href="add/" class="btn btn-primary" role="button">Add Patient</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Account</th>
+                <th scope="col">Treatment Started</th>
+                <th scope="col">Treatment Finished</th>
+                <th scope="col">Treatment Goal</th>
+                <th scope="col">Height</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for patient in patients %}
+            <tr>
+                <th scope="row">{{patient.id}}</th>
+                <td>{{patient.account}}</td>
+                <td>{{patient.treatmentStarted}}</td>
+                <td>{{patient.treatmentFinished}}</td>
+                <td>{{patient.treatmentGoal}}</td>
+                <td>{{patient.height}}</td>
+                <td>{{patient.weight}}</td>
+                <td>{{patient.gender}}</td>
+                <td>{{patient.comment}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+<h1 class="mt-5">All Patient Training Zones</h1>
+
+    <h2 class="mt-5">Statistics</h2>
+    <ul>
+        <li><em># of Patient TrainingZones</em>: {{training_zones.paginate().total}}</li>
+    </ul>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Overview</h2>
+        </div>
+        <div class="col text-right">
+            <a href="./trainingZones/add" class="btn btn-primary" role="button">Add Patient Training Zone</a>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Patient</th>
+                <th scope="col">CreationDate</th>
+                <th scope="col">Active</th>
+                <th scope="col">Workout Type</th>
+                <th scope="col">Unit</th>
+                <th scope="col">Upper0 Heartrate</th>
+                <th scope="col">Upper1 Heartrate</th>
+                <th scope="col">Upper2 Heartrate</th>
+                <th scope="col">Upper3 Heartrate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for training_zone in training_zones %}
+            <tr>
+                <th scope="row">{{training_zone.id}}</th>
+                <td>{{training_zone.patient}}</td>
+                <td>{{training_zone.creationDate}}</td>
+                <td>{{training_zone.active}}</td>
+                <td>{{training_zone.workoutType}}</td>
+                <td>{{training_zone.unit}}</td>
+                <td>{{training_zone.upper0Bound}}</td>
+                <td>{{training_zone.upper1Bound}}</td>
+                <td>{{training_zone.upper2Bound}}</td>
+                <td>{{training_zone.upper3Bound}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

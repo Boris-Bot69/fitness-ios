@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Add Studygroup Trainer</h1>
+    <br />
+    <form id="registerForm" class="form form-register" method="POST" action="" role="form">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{form.studyGroupId.label}}
+            {{form.studyGroupId(placeholder="Study Group ID", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.trainerId.label}}
+            {{form.trainerId(placeholder="Trainer ID", class_="form-control")}}
+        </div>
+        <p><input class="btn btn-primary" type="submit" value="Register"></p>
+    </form>
+</div>
+{% endblock %}

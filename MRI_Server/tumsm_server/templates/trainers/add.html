@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Add Trainer</h1>
+    <br />
+    <form id="registerForm" class="form form-register" method="POST" action="" role="form">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{form.accountId.label}}
+            {{form.accountId(placeholder="Account ID", class_="form-control")}}
+        </div>
+        <p><input class="btn btn-primary" type="submit" value="Register"></p>
+    </form>
+</div>
+{% endblock %}

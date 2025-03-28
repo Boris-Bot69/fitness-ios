@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Add Patient Training Zones</h1>
+    <br />
+    <form id="registerForm" class="form form-register" method="POST" action="" role="form">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{form.patientId.label}}
+            {{form.patientId(placeholder="Patient ID", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.workoutType.label}}
+            {{form.workoutType(placeholder="Patient ID", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.unit.label}}
+            {{form.unit(placeholder="Patient ID", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.upper0Bound.label}}
+            {{form.upper0Bound(placeholder="Upper 0", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.upper1Bound.label}}
+            {{form.upper1Bound(placeholder="Upper 1", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.upper2Bound.label}}
+            {{form.upper2Bound(placeholder="Upper 2", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.upper3Bound.label}}
+            {{form.upper3Bound(placeholder="Upper 3", class_="form-control")}}
+        </div>
+        <p><input class="btn btn-primary" type="submit" value="Register"></p>
+    </form>
+</div>
+{% endblock %}

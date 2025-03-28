@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Add Planned Workout</h1>
+    <br />
+    <form id="registerForm" class="form form-register" method="POST" action="" role="form">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{form.patientId.label}}
+            {{form.patientId(placeholder="PatientId", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.plannedDate.label}}
+            {{form.plannedDate(placeholder="Planned Date", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.type.label}}
+            {{form.type(placeholder="Type", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.maxHeartRate.label}}
+            {{form.maxHeartRate(placeholder="Max Heart Rate", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.minDuration.label}}
+            {{form.minDuration(placeholder="Max Heart Rate", class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{form.minDistance.label}}
+            {{form.minDistance(placeholder="Max Heart Rate", class_="form-control")}}
+        </div>
+        <p><input class="btn btn-primary" type="submit" value="Register"></p>
+    </form>
+</div>
+{% endblock %}
